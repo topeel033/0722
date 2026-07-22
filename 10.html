@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cards {
+      /* 770px 이하 (모바일) */
+      @media (max-width: 770px) {
+        .box { background: pink; }
+      }
+
+      /* 770px 이상 (데스크톱) */
+      @media (min-width: 770px) {
+        .box { background: skyblue; }
+      }
+
+      /* 조건 조합 */
+      @media (min-width: 770px) and (orientation: landscape) {
+        .box { background: lightgreen; }
+      }
+
+      /* 2023년부터 지원되는 신문법 */
+      @media (width >= 770px) {
+        .box { background: yellow; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>카드1</h1>
+    <h1>카드2</h1>
+    <h1>카드3</h1>
+  </body>
+</html>
